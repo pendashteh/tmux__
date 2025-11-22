@@ -1,5 +1,11 @@
 #! /usr/bin/env bash
 
+mouse__help="@arg on|off @does triggers mouse control"
+mouse__ () {
+  local mode=${1:-'on'}
+  tmux set -g mouse $mode
+}
+
 sync__help="@arg on|off @does sync all panes on the window."
 sync__ () {
   local mode=${1:-'on'}
