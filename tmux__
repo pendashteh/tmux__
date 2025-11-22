@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+sync__help="@arg on|off @does sync all panes on the window."
+sync__ () {
+  local mode=${1:-'on'}
+  tmux set-window-option synchronize-panes $mode
+}
+
+. undies
+
