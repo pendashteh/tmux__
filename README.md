@@ -11,6 +11,7 @@ n/a
 
 Available tasks:
  - help      # @arg task @does declare task implementation
+ - mouse     # @arg on|off @does triggers mouse control
  - sync      # @arg on|off @does sync all panes on the window.
 
 Usage:
